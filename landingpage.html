@@ -6,6 +6,38 @@
     <title>Typing Test - Landing Page</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fb;
+        color: #333;
+      }
+
+      header {
+        background-color: #0077cc;
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
       .hero {
         text-align: center;
         padding: 60px 20px;
@@ -26,6 +58,7 @@
 
       .hero .btn-group {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
       }
@@ -78,6 +111,15 @@
         .features ul {
           grid-template-columns: 1fr;
         }
+
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav {
+          margin-top: 10px;
+        }
       }
     </style>
   </head>
@@ -87,6 +129,8 @@
       <nav>
         <a href="register.html">Register</a>
         <a href="login.html">Login</a>
+
+        <!-- Logout link added -->
       </nav>
     </header>
 
@@ -98,6 +142,8 @@
       <div class="btn-group">
         <a href="typing-test.html" class="btn">Start Test</a>
         <a href="about.html" class="btn">Learn More</a>
+        <a href="#" class="btn">Logout</a>
+        <!-- Optional Logout button in hero -->
       </div>
     </section>
 
