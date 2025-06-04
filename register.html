@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fb;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        max-width: 400px;
+        margin: 60px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0077cc;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      input {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 12px;
+        background-color: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #005fa3;
+      }
+
+      .login-link {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .login-link a {
+        color: #0077cc;
+        text-decoration: none;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Create an Account</h2>
+      <form>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter username"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email" required />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <button type="submit">Register</button>
+      </form>
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </div>
+    </main>
+  </body>
+</html>
