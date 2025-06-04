@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test - Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(120deg, #0077cc, #005fa3);
+        color: white;
+        border-radius: 0 0 30px 30px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .hero .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .hero .btn {
+        background-color: white;
+        color: #0077cc;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+      }
+
+      .hero .btn:hover {
+        background-color: #eef2f5;
+      }
+
+      .features {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .features h2 {
+        margin-bottom: 20px;
+      }
+
+      .features ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .features li {
+        background-color: #f0f6fc;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #0077cc;
+        text-align: left;
+      }
+
+      @media (max-width: 600px) {
+        .features ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Typing Test App</h1>
+      <nav>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Boost Your Typing Speed</h1>
+      <p>
+        Take free typing tests, track your progress, and become a keyboard pro!
+      </p>
+      <div class="btn-group">
+        <a href="typing-test.html" class="btn">Start Test</a>
+        <a href="about.html" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Use Our App?</h2>
+      <ul>
+        <li>🚀 Fast and responsive design</li>
+        <li>📊 Track your speed and accuracy</li>
+        <li>📈 View test history and improvements</li>
+        <li>🧠 Great for students and professionals</li>
+      </ul>
+    </section>
+  </body>
+</html>
