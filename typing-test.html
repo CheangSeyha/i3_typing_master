@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    #testText {
+      padding: 10px;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+    #inputArea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    #restartBtn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #timer {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Typing Speed Test</h2>
+  <p id="testText">The quick brown fox jumps over the lazy dog.</p>
+  <textarea id="inputArea" rows="4" placeholder="Start typing here..."></textarea>
+  <div id="timer">Time: 0s</div>
+  <div id="result"></div>
+  <button id="restartBtn">Restart</button>
+  <script src="script.js"></script>
+</body>
+</html>
